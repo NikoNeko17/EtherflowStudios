@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etherflow Studios - Twilight Skies Journey</title>
+  <link rel="stylesheet" href="../../../css/main.css">
+  <link rel="icon" href="../../../img/favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .characterDetails {
+      background-color: #1d1d1d;
+      border: 2px solid #fda98f;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .characterBody {
+      width: 100%;
+      max-width: 500px;
+      height: 500px;
+      border: 2px solid #131313;
+      border-radius: 8px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .subTitle {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .contents ul {
+      list-style: decimal;
+      padding-left: 1.5rem;
+    }
+
+    .contents a {
+      color: inherit;
+    }
+
+    .habilidades {
+      background-color: #1d1d1d;
+      border: 2px solid #fda98f;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .habilidades table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 600px;
+    }
+
+    .habilidades th, .habilidades td {
+      border: 2px solid white;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .contenedor {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+      }
+
+      .characterDetails {
+        top: 1rem;
+        height: fit-content;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span><img src="../../../img/favicon.png" alt="Etherflow Studios Logo" class="etherflowLogo"></span>
+    <article class="headerBar">
+      <a href="../../../index.html">Inicio</a>
+      <a href="#community">Comunidad</a>
+      <a href="../../../index.html#proyects">Proyectos</a>
+      <a href="#downloads">Descargas</a>
+      <a href="#guides">Guías</a>
+    </article>
+  </header>
+
+  <main class="contenedor">
+    <section>
+      <section class="characterDesc">
+        <h4 class="subTitle" id="introduccion">Introducción</h4>
+        <p>
+          Lyara, desde joven, mostró una curiosidad incansable
+          por lo que había más allá del bosque. Siempre con una
+          sonrisa traviesa y una idea loca en mente. Hoy, aunque
+          haya dejado atrás su hogar, lleva consigo ese espíritu
+          inquieto que le valió su apodo.
+        </p>
+      </section>
+
+      <section class="contents">
+        <h4 class="subTitle">Contenidos</h4>
+        <ul>
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#ascension">Ascensión</a></li>
+        </ul>
+      </section>
+
+      <section class="habilidades" id="habilidades">
+        <h4 class="subTitle">Habilidades</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Valor Base</th>
+              <th>Aum. por nivel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Elemental</td>
+              <td>Una Vida Más</td>
+              <td>Aumenta los bonos de daño elementales en un +x% por 12 segundos.</td>
+              <td>4.6%</td>
+              <td>2.3%</td>
+            </tr>
+            <tr>
+              <td>Elemental</td>
+              <td>Una Vida Más</td>
+              <td>Aumenta el ATQ en +x% y la Prob. Crit en +y% por nivel por 8 segundos.
+</td>
+              <td>4.6%</td>
+              <td>2.3%</td>
+            </tr>
+            <tr>
+              <td>Talento</td>
+              <td>Acelerador Natural</td>
+              <td>Otorga +10% Rec. de Energ. con 2 aliados de diferente elemento en el equipo. Este efecto se duplica al usar la habilidad definitiva.</td>
+              <td>10%</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <aside class="characterDetails">
+      <h2>Lyara</h2>
+      <h4>La Chispa Inquieta</h4>
+      <img src="../../../img/Lyara.png" alt="Lyara" class="characterBody">
+      <hr color="#171717">
+    </aside>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>

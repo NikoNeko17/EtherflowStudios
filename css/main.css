@@ -1,0 +1,165 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.nunito-font {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    color: #f0f0f0;
+    background-color: #0d0d0d;
+}
+
+main{
+    min-height: 68.4vh;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+header{
+    background-color: #1d1d1d;
+    border-bottom: #fda98f 2px solid;
+    padding: 8px;
+    width: auto;
+    position: relative;
+}
+
+.headerBar a{
+    color: #fda98f;
+    margin: 5px;
+}
+
+.headerBar{
+    text-align: center;
+}
+
+footer{
+    clear: both;
+    background-color: #1d1d1d;
+    padding: 1em;
+    border-top: solid 2px #fda98f;
+}
+
+.etherflowLogo{
+    width: 6em;
+    height: 6em;
+    margin: 12px;
+}
+
+.webIcon{
+    width: 2em;
+    height: 2em;
+    margin: 12px;
+}
+
+.iconBar{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.agrupar{
+    width: 960px;
+}
+
+.agrupar section{
+    width: 520px;
+    float: left;
+}
+
+.agrupar aside{
+    width: 250px;
+    float: right;
+}
+
+
+.set_row1, .set_row2, .set_row3{
+    text-align: center;
+    align-content: center;
+    font-size: 0;
+}
+.set_row1 span{
+    text-align: center;
+    display: inline-block;
+    background-color: #1d1d1d;
+    margin: 12px;
+    width: 12rem;
+    height: auto;
+    min-height: 12rem;
+    border: solid 2px #151515;
+    border-radius: 8px;
+    transition: 0.3s;
+    vertical-align: top;
+    position: relative;
+}
+
+.set_row1 span:hover, .set_row2 span:hover, .set_row3 span:hover{
+    transform: translateY(-10px);
+}
+
+.set_row1 span:active{
+    border: #fda98f 2px solid;
+}
+
+.set_row2 span{
+    text-align: center;
+    display: inline-block;
+    background-color: #1d1d1d;
+    margin: 12px;
+    width: 16rem;
+    height: 4rem;
+    line-height: 2rem;
+    border: solid 2px #151515;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.set_row1 p, .set_row2 p, .set_row3 p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.set_row3 span{
+    text-align: center;
+    display: inline-block;
+    background-color: #1d1d1d;
+    margin: 12px;
+    width: 80vw;
+    height: 6rem;
+    line-height: 4rem;
+    border: solid 2px #151515;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gridContainer{
+    margin: 10px;
+}
+
+.gridBox{
+    display: inline-block;
+    border: #fda98f 2px solid;
+    border-radius: 8px;
+    padding: 5px;
+    background: #0d0d0d;
+    max-width: 450px;
+    display: flex;
+}
