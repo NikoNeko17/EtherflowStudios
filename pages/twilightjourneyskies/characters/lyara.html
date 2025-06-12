@@ -56,23 +56,27 @@
       color: inherit;
     }
 
-    .habilidades {
+    .table {
       background-color: #1d1d1d;
       border: 2px solid #fda98f;
       border-radius: 8px;
       overflow-x: auto;
     }
 
-    .habilidades table {
+    .table table {
       border-collapse: collapse;
       width: 100%;
       min-width: 600px;
     }
 
-    .habilidades th, .habilidades td {
+    .table th, .table td {
       border: 2px solid white;
       padding: 0.5rem;
       text-align: center;
+    }
+
+    .characterDetails td{
+      text-align: start;
     }
 
     @media (min-width: 768px) {
@@ -103,8 +107,8 @@
   <main class="contenedor">
     <section>
       <section class="characterDesc">
-        <h4 class="subTitle" id="introduccion">Introducción</h4>
-        <p>
+        <h4 class="subTitle" id="introduction">Introducción</h4>
+        <p class="mainDesc">
           Lyara, desde joven, mostró una curiosidad incansable
           por lo que había más allá del bosque. Siempre con una
           sonrisa traviesa y una idea loca en mente. Hoy, aunque
@@ -116,13 +120,15 @@
       <section class="contents">
         <h4 class="subTitle">Contenidos</h4>
         <ul>
-          <li><a href="#introduccion">Introducción</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#introduction">Introducción</a></li>
+          <li><a href="#skills">Habilidades</a></li>
           <li><a href="#ascension">Ascensión</a></li>
+          <li><a href="#build">Build</a></li>
+          <li><a href="#voicelines">Líneas</a></li>
         </ul>
       </section>
 
-      <section class="habilidades" id="habilidades">
+      <section class="table" id="skills">
         <h4 class="subTitle">Habilidades</h4>
         <table>
           <thead>
@@ -138,15 +144,14 @@
             <tr>
               <td>Elemental</td>
               <td>Una Vida Más</td>
-              <td>Aumenta los bonos de daño elementales en un +x% por 12 segundos.</td>
+              <td>Aumenta los bonos de daño elementales en un +&#x1D465% por 12 segundos.</td>
               <td>4.6%</td>
               <td>2.3%</td>
             </tr>
             <tr>
-              <td>Elemental</td>
-              <td>Una Vida Más</td>
-              <td>Aumenta el ATQ en +x% y la Prob. Crit en +y% por nivel por 8 segundos.
-</td>
+              <td>Definitiva</td>
+              <td>Combate Felino</td>
+              <td>Aumenta el ATQ en +&#x1D465;% y la Prob. Crit en +&#x1D466;% por nivel por 8 segundos.</td>
               <td>4.6%</td>
               <td>2.3%</td>
             </tr>
@@ -160,13 +165,137 @@
           </tbody>
         </table>
       </section>
+      <br>
+      <section class="table" id="ascension">
+        <h4 class="subTitle">Materiales de Ascensión</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Ascensión</th>
+              <th>Material Común</th>
+              <th>Material Raro</th>
+              <th>Material de Jefe</th>
+              <th>Material Elemental</th>
+              <th>Nimbras</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>★☆☆☆☆☆</td>
+              <td>x6 {{material_comun_1}}</td>
+              <td>-</td>
+              <td>-</td>
+              <td>x3 {{material_elemental_2}}</td>
+              <td>20.000</td>
+            </tr>
+            <tr>
+              <td>★★☆☆☆☆</td>
+              <td>x14 {{material_comun_1}}</td>
+              <td>-</td>
+              <td>x2 {{material_jefe_4}}</td>
+              <td>x6 {{material_elemental_2}}</td>
+              <td>40.000</td>
+            </tr>
+            <tr>
+              <td>★★★☆☆☆</td>
+              <td>x8 {{material_comun_2}}</td>
+              <td>-</td>
+              <td>-</td>
+              <td>x6 {{material_elemental_3}}</td>
+              <td>60.000</td>
+            </tr>
+            <tr>
+              <td>★★★★☆☆</td>
+              <td>x12 {{material_comun_2}}</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>80.000</td>
+            </tr>
+            <tr>
+              <td>★★★★★☆</td>
+              <td>x12 {{material_comun_3}}</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>160.000</td>
+            </tr>
+            <tr>
+              <td>★★★★★★</td>
+              <td>x20 {{material_comun_3}}</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>320.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="build">
+        <h4 class="subTitle">Buildeo de Lyara</h4>
+        <h5 style="text-align: center; text-decoration: underline;">Descripción breve</h5>
+        <p>
+          Lyara es una soporte del elemento Valtés que se destaca por otorgar más y más daño a los aliados. Su kit se basa en buffs de casi constante duración, por lo que es una muy buena ayuda al inicio del juego.
+        </p>
+        <h5 style="text-align: center; text-decoration: underline;">Armas</h5>
+        <p>Lyara se centra en obtener <strong>Recarga de Energía%</strong> para poder usar su habilidad definitiva constantemente, sus mejores opciones de armas son:</p>
+        <section class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Daño Base</th>
+                <th>Estadística Base</th>
+                <th>Daño Máximo</th>
+                <th>Estadística Máxima</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nebulosa Carmesí</td>
+                <td>49</td>
+                <td>Rec. Energía% +0.0%</td>
+                <td>513</td>
+                <td>Rec. Energía% +27.0%</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
     </section>
-
     <aside class="characterDetails">
       <h2>Lyara</h2>
       <h4>La Chispa Inquieta</h4>
       <img src="../../../img/Lyara.png" alt="Lyara" class="characterBody">
-      <hr color="#171717">
+      <hr color="#333">
+      <table>
+        <tbody>
+            <tr>
+              <td><strong>Rareza</strong></td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+                <td><strong>Arma</strong></td>
+                <td>Espada</td>
+            </tr>
+            <tr>
+              <td><strong>Elemento</strong></td>
+              <td>Valtés</td>
+            </tr>
+            <tr>
+              <td><strong>Rol inicial</strong></td>
+              <td>Soporte</td>
+            </tr>
+            <tr>
+              <td><strong>Representación</strong></td>
+              <td>Apatita Azul</td>
+            </tr>
+            <tr>
+              <td><strong>Cumpleaños</strong></td>
+              <td>13 de Noviembre</td>
+            </tr>
+        </tbody>
+      </table>
     </aside>
   </main>
   <footer>
